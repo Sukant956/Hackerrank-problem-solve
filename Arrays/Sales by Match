@@ -1,0 +1,27 @@
+// Problem: Sales by match
+// Platform: Hackerrank
+// Approach: The Laundry Basket
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+// Code
+
+class Solution {
+ public static int sockMerchant(int n, List<Integer> ar){
+   int ans = 0;
+   // Creating Hash Set
+
+   HashSet<Integer> hs = new HashSet<>();
+
+   for(int i = 0;i< n;i++){
+   if(!hs.contains(ar.get(i))){
+       hs.add(ar.get(i));
+   }
+   else {
+       hs.remove(ar.get(i));
+       ans++;
+   }
+ }
+return ans;
+}
+}
