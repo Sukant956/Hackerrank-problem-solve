@@ -1,0 +1,19 @@
+// Problem: Simple Array Sum
+// Platform: Hackerrank
+// Approach: loop
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
+// Code 
+
+class Solution{
+  public static int simpleArraySum(List<Integer> ar){
+   int sum = 0;
+
+   // Running loop and adding elements
+   for(int i = 0;i < ar.size();i++){
+     sum = sum + ar.get(i);
+   }
+  return sum;
+  }
+}
