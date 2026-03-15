@@ -1,0 +1,21 @@
+// Problem: Number Line Jump
+// Platform: Hackerrank
+// Approach: Speed Formulae
+// Time Complexity: O(1)
+// Space Complexity: O(1)
+
+// Code 
+
+class Solution {
+  String Kangaroo(int x1, int v1, int x2, int v2){
+    if(v1 < v2){
+     return "No";
+    }
+   if((x2 - x1) % (v1 - v2 == 0)){
+     return "yes";
+   }
+   else {
+     return "No";
+   }
+  }
+}
