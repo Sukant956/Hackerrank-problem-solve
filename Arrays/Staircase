@@ -1,0 +1,25 @@
+// Problem:Staircase
+// Platform: Hackerrank
+// Approach:
+// Time Complexity:
+// Space Complexity:
+
+// Code
+
+class Solution{
+ static void staircase(int n){
+   for(int numSymbols = 1; numSymbols <= n; numSymbols++){
+     int numSpace = n - numSymbols;
+
+// Print out the Space
+
+   for(int i =0;i < numSpaces;i++){
+     System.out.println('');
+   }
+ for(int i = 0;i < numSymbols; i++){
+    System.out.println("#");
+ }
+ System.out.println();
+   }
+ }
+}
