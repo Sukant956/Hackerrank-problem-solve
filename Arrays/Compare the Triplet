@@ -1,0 +1,23 @@
+// Problem: Compare the Triplet
+// Platform: Hackerrank
+// Approach: else if conditional
+// Time Complexity: O(1)
+// Space Complexity: O(1)
+
+// Code
+
+class Solution{
+   public static List<Integer> compareTriplets(List<Integer> a, List<Integer> b){
+     int alice_Point = 0;
+     int bob_Point = 0;
+    for(int i = 0;i < 3; i++){
+      if(a.get(i) > b.get(i)){
+        alice_Point++;
+      }
+      else if(a.get(i) < b.get(i)){
+        bob_Point++;
+      }
+    }
+    return Arrays.asList(alice_Point,bob_Point);
+   }
+}
