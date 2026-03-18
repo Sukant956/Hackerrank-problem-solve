@@ -1,8 +1,8 @@
 // Problem:Staircase
 // Platform: Hackerrank
-// Approach:
-// Time Complexity:
-// Space Complexity:
+// Approach: for loop
+// Time Complexity: O(n)
+// Space Complexity: O(n)
 
 // Code
 
