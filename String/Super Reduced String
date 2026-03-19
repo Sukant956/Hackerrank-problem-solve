@@ -1,0 +1,31 @@
+// Problem: Super Reduced String
+// Platform: Hackerrank
+// Approach: Stack
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+// Code
+
+class Solution{
+  public String superReducedStringUsingStack(String str){
+
+     Stack<Character> characterStack = new Stack<>();
+
+     for(char c : str.toCharArray()){
+      if(characterStack.isEmpty()){
+         characterStack.push(c);
+      }
+      else if(characterStack.peek() == c){
+         characterStack.pop();
+      }
+      else{
+         characterStack.push(c);
+      }
+     }
+  StringBuilder result = new StringBuilder();
+   for(char c: characterStack){
+     result.append(c);
+   }
+   return result.length() == 0 ? "Empty String" : result.toString();
+  }
+}
