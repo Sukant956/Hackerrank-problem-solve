@@ -1,0 +1,29 @@
+// Problem: Migratory Birds
+// Platform: Hackerrank
+// Approach:  Assign the count  and then find max 
+// Time Complexity: O(n)
+// Space Complexity:O(n)
+
+// Code
+
+class Solution{
+  public static int migratoryBirds(List<Integer> arr){
+    // creating array for 1-5 as per the condition
+    int ar[] = new int[5];
+
+     // counting the appearience of each value
+
+    for(int i = 0;i < ar.size();i++){
+     ar[arr.get(i) - 1]++;
+    }
+    int max = 0, ans = 0;
+
+    for(int i = 0;i < ar.length;i++){
+      if(ar[i] > max){
+        max = ar[i];
+        ans = i + 1;
+      }
+    }
+   return ans;
+  }
+}
