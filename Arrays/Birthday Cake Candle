@@ -1,0 +1,28 @@
+// Problem: Birthday Cake Candle
+// Platform: Hackerrank
+// Approach: Find Max and count occurance
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+// Code
+
+class Solution{
+  static int birthdayCakeCandles(int ar[]){
+    int count = 0;
+    int max = ar.get(0);
+
+// Find max
+    for(int i = 0;i < ar.size();i++){
+        if(ar.get(i) > max){
+          max = ar.get(i);
+        }
+    }
+    // Count max
+    for(int i = 0; i<ar.size();i++){
+     if(max == ar.get(i)){
+       count++;
+     }
+    }
+return count;
+  }
+}
