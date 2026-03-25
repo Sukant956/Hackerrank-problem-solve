@@ -1,0 +1,25 @@
+// Problem: Grading Student
+// Platform: Hackerrank
+// Approach: loop and condition
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+// Code
+
+class Solution{
+   public static List<Integer> gradingStudent(List<Integer> grades){
+      List<Integer> list = new ArrayList<>();
+      for(int i = 0;i < grades.size();i++){
+        int x = grades.get(i);
+        int rem = x % 5;
+
+        if(x >= 38 && ((x + 5) - rem)- x < 3)){
+           list.add((x + 5) - rem);
+        }
+        else{
+           list.add(x);
+        }
+      }
+return list;
+   }
+}
