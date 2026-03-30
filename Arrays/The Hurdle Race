@@ -1,0 +1,19 @@
+// Problem: Hurdle Race
+// Platform: Hackerrank
+// Approach: sorting technique
+// Time Complexity: 
+// Space Complexity:
+
+// Code
+
+class Solution{
+   public static int hurdleRace(int k, List<Integer> height){
+     int max = Collections.max(height);
+     if(k > max){
+      return 0;
+     }
+     else{
+       return max - k;
+     }
+   }
+}
