@@ -1,0 +1,22 @@
+// Problem: Minimum Absolute Difference
+// Platform: Hackerrank
+// Approach: using absolute and for loop
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+ 
+// Code
+
+class Solution{
+  public static int minimumAbsoluteDifference(List<Integer> arr){
+    // sort the Array
+    Collections.sort(arr);
+    int minDiff = Integer.MAX_VALUE;
+
+   // Comparing the adjacent value
+    for(int i = 1; i < arr.size();i++){
+     int diff = Math.abs(arr.get(i) - arr.get(i - 1));
+     minDiff = Math.min(minDiff,diff);
+    }
+    return minDiff;
+  }
+}
