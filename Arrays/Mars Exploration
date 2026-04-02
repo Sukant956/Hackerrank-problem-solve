@@ -1,1 +1,22 @@
-// Problem: 
+// Problem: Mars Exploration
+// Platform: Hackerrank
+// Approach: 
+// Time Complexity:
+// Space Complexity:
+
+// Code
+
+class Solution{
+    public static int marsExploration(String s){
+      int count = 0;
+      for(int i = 0;i < s.length();i++){
+         if(i % 3 == 0 && s.charAt(i) != 'S'){
+             count++;
+         }
+         else if(i % 3 == 2 && s.charAt(i) != 'S'){
+           count++;
+         } 
+      }
+     return count;
+    }
+}
