@@ -1,0 +1,20 @@
+// Problem: Viral Advertising
+// Platform: Hackerrank
+// Approach: Using Loop
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+// code
+
+class Solution{
+   public static int viralAdvertising(int n){
+      int shared = 5;
+      int totalLikes = 0;
+     for(int day = 1;day <= n;day++){
+       int likes = shared/2;
+       totalLikes += likes;
+       shared = likes * 3;
+     }
+    return totalLikes;
+   }
+}
