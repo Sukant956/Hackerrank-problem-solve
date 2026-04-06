@@ -1,0 +1,21 @@
+// Problem: Jumping on the cloud:Revisit
+// Platform: Hackerrank
+// Approach: Do while loop
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+// Code
+
+class Solution{
+  public static int Jumping(int c[],int k){
+    int n = c.length;
+    int energy = 100;
+     int pos = 0;
+     do{
+       pos = (pos + k) % n;
+       energy -= 1 + 2 * c[pos];
+     }
+     while(pos != 0);
+     return energy;
+  }
+}
