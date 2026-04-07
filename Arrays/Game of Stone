@@ -1,0 +1,18 @@
+// Problem: Game of Stone
+// Platform: Hackerrank
+// Approach: if else
+// Time Complexity: 
+// Space Complexity:
+
+// Code
+
+class Solution{
+   public static string gameOfStones(int n){
+     if(n % 7 == 0 || n % 7 == 1){
+         return "Second";
+     }
+     else{
+        return "First";
+     }
+   }
+}
