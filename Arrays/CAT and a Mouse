@@ -1,0 +1,23 @@
+// Problem: CAT and a Mouse
+// Platform: Hackerrank
+// Approach: if else
+// Time Complexity:
+// Space Complexity:
+
+// Code
+
+class Solution{
+   public static String catMouse(int x,int y,int z){
+      int distanceA = Math.abs(x - z);
+      int distanceB = Math.abs(y - z);
+      if(distanceA < distanceB){
+         return "Cat A";
+      }
+      else if(distanceA < distanceB){
+         return "Cat A";
+      }
+      else{ 
+          return "Mouse C";
+        }
+   }
+}
