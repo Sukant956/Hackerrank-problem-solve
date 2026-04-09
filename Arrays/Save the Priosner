@@ -1,0 +1,30 @@
+// Problem: Save the Priosner
+// Platform: Hackerrank
+// Approach: While Loop
+// Time Complexity:
+// Space Complexity:
+
+// Code
+
+class Solution{
+  public static int reverseNumber(int num){
+     int rev = 0;
+     while(num > 0){
+       int digit = num % 10;
+       rev = rev * 10 + digit;
+       num = num / 10;
+     }
+   return rev;
+  }
+  public static int beautifulDays(int i,int j,int k){
+     int count = 0;
+     for(int x = i;x <= j;x++){
+        int rev = reverseNumber(x);
+         int diff = Math.abs(x - rev);
+        if(diff % k == 0){
+          count++;
+        }
+     }
+     return count;
+  }
+}
