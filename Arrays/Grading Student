@@ -1,6 +1,6 @@
 // Problem: Grading Student
 // Platform: Hackerrank
-// Approach: loop and condition
+// Approach: iterative Approach
 // Time Complexity: O(n)
 // Space Complexity: O(n)
 
