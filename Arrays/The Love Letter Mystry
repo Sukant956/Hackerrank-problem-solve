@@ -1,0 +1,23 @@
+// Problem:The Love Letter Mystry
+// Platform: Hackerrank
+// Approach:
+// Time Complexity:
+// Space Complexity:
+
+// Code
+
+class Solution{
+   public static int theLoveLetterMystry(String s){
+    int operations = 0;
+    int left = 0;
+    int right = s.length() - 1;
+    while(left < right){
+      char c1 = s.charAt(left);
+      char c2 = s.charAt(right);
+      operations += Math.abs(c1 - c2);
+       left++;
+       right--;
+    }
+    return operations;
+   }
+}
