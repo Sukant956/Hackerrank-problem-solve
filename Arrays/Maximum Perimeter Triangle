@@ -1,0 +1,19 @@
+// Problem: Maximum Perimeter Triangle
+// Platform: Hackerrank
+// Approach: Sorting and Loop
+// Time Complexity: O(nlogn)
+// Space Complexity:O(logn)
+
+// Code
+
+class Solution{
+   public static List<Integer> maximumPerimeterTriangle(List<Integer> sticks){
+      Collections.sort(sticks);
+      for(int i = stick.size() - 3;i >= 0;i--){
+        if(stick.get(i) + stick.get(i+1) > stick(i +2)){
+           return Arrays.asList(stick.get(i),stick.get(i + 1),stick.get(i + 2));
+        }
+      }
+      return Arrays.asList(-1);
+   }
+}
