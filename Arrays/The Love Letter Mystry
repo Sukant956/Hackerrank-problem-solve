@@ -1,8 +1,8 @@
 // Problem:The Love Letter Mystry
 // Platform: Hackerrank
-// Approach:
-// Time Complexity:
-// Space Complexity:
+// Approach: Using while loop
+// Time Complexity: O(n)
+// Space Complexity: O(1)
 
 // Code
 
