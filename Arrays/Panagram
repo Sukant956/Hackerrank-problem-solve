@@ -1,0 +1,28 @@
+// Problem: Panagram
+// Platform: Hackerrank
+// Approach: Using Set Data Structure
+// Time Complexity: 
+// Space Complexity:
+
+// Code
+
+class Solution{
+   boolean checkIfPanagram(String sentence){
+    Set<Character> alphabetSet = new HashSet<>();
+
+   // Add all character from 'a' to 'z' in HashSet
+    for(int i = 'a'; i <= 'z';i++){
+       alphabetSet.add((char)i);
+    }
+    // Remove every character and check
+    // If Set become empty at any point of time
+      for(int i = 0;i < sentence.length();i++){
+         alphabetSet.remove(sentence.charAt(i));
+         if(alphabetSet.isEmpty()){
+           return true;
+         }
+        return false;
+      }
+
+   }
+}
