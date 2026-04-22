@@ -1,8 +1,8 @@
 // Problem: Panagram
 // Platform: Hackerrank
 // Approach: Using Set Data Structure
-// Time Complexity: 
-// Space Complexity:
+// Time Complexity: O(n)
+// Space Complexity: O(1)
 
 // Code
 
