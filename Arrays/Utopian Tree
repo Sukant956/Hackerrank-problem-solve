@@ -1,8 +1,8 @@
 // Problem: Utopian Tree
 // Platform: Hackerrank
-// Approach:
-// Time Complexity:
-// Space Complexity:
+// Approach: For Loop 
+// Time Complexity: O(n)
+// Space Complexity: O(n)
 
 // Code
 
