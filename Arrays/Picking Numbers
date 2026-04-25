@@ -1,0 +1,24 @@
+// Problem: Picking Numbers
+// Platform:
+// Approach:
+// Time Complexity:
+// Space Complexity:
+
+// Code
+
+class Solution{
+   public static pickingNumbers(List<Integer> a){
+      int []freq = new int[101]; // because all are in between 0 - 100
+      //counting frequency
+
+      for(int num: a){
+        freq[num]++;
+      }
+      int maxLength = 0;
+      for(int i = 0;i < 100;i++){
+        int currentLength = freq[i] + freq[i + 1];
+        maxLength = Math.max(maxLength,currentLength);
+      }
+      return maxLength;
+   }
+}
