@@ -1,8 +1,8 @@
 // Problem: Picking Numbers
-// Platform:
-// Approach:
-// Time Complexity:
-// Space Complexity:
+// Platform: Hackerrank
+// Approach: Frequency Mapping
+// Time Complexity: O(n)
+// Space Complexity: O(1)
 
 // Code
 
