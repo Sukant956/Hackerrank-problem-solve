@@ -1,0 +1,31 @@
+// Problem: Repeated String
+// Platform: Hackerrank
+// Approach:
+// Time Complexity:
+// Space Complexity:
+
+// Code
+
+class Solution{
+  public static long repeatedString(String s){
+     long count = 0;
+     // Counting of a
+    for(int i = 0;i < s.length();i++){
+      if(s.charAt(i) == 'a'){
+        count++;
+      }
+    }
+    // Repetation of String
+    long repetation = n / s.length();
+    //Remaining Character
+    long remainder = n % s.length();
+    //counting the length of the new string format
+    long countInRemainder = 0;
+    for(int i = 0;i < remainder;i++){
+      if(s.charAt(i) == 'a'){
+        countInRemainder++;
+      }
+    }
+    return (count * repetation) + countInRemainder;
+  }
+}
