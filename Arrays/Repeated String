@@ -1,8 +1,8 @@
 // Problem: Repeated String
 // Platform: Hackerrank
 // Approach:
-// Time Complexity:
-// Space Complexity:
+// Time Complexity: O(|s|) s is the length of the string
+// Space Complexity: 0(1)
 
 // Code
 
