@@ -1,0 +1,22 @@
+// Problem: Designer PDF Viewer
+// Platform: Hackerrank
+// Approach: 
+// Time Complexity:
+// Space Complexity:
+
+// Code
+
+class Solution{
+  public static int designerPdfViewer(List<Integer> h,String word){
+    int height = 0;
+    for(int i = 0;i < word.length();i++){
+        int index = Math.abs('a' - word.charAt(i));
+        int val = h.get(index);
+        if(height < val){
+          height = val;
+        }
+    }
+    int len = word.length();
+     return height * len;
+  }
+}
