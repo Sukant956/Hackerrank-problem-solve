@@ -1,8 +1,8 @@
 // Problem: Designer PDF Viewer
 // Platform: Hackerrank
-// Approach: 
-// Time Complexity:
-// Space Complexity:
+// Approach: Loops
+// Time Complexity: O(n)
+// Space Complexity: O(1)
 
 // Code
 
