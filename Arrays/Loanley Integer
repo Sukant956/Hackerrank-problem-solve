@@ -1,0 +1,17 @@
+// Problem: Loanley Integer
+// Platform: Hackerrank
+// Approach:
+// Time Complexity:
+// Space Complexity:
+
+// Code
+
+class Solution {
+  public static int loanlyInteger(int []arr){
+     int val = 0;
+     for(int num : arr){
+        value = value ^ arr;
+     }
+   return arr;
+  }
+}
