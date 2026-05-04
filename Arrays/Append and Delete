@@ -1,0 +1,34 @@
+// Problem: Append and Delete
+// Platform: Hackerrank
+// Approach:
+// Time Complexity:
+// Space Complexity:
+
+// Code
+
+class Solution{
+    public static string appendAndDelete(String s,String t,int k){
+        int si = 0;
+        int ti = 0;
+        while(si < s.length() && ti < t.length()){
+           if(s.charAt(si) == t.charAt(ti)){
+              si++;
+              ti++;
+           }
+           else{
+              break;
+           }
+        }
+        int restOp = s.length() - si + t.length() - ti;
+        if(k < restOp){
+           return "No";
+        }
+        if((k - restOp) % 2 == 0){
+           return "yes";
+        }
+        k(k >= s.length() + t.length()){
+           return "Yes";
+        }
+       return "No";
+    }
+}
