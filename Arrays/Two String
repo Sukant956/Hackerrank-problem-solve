@@ -1,0 +1,28 @@
+// Problem: Two String
+// Platform:
+// Approach:
+// Time Complexity:
+// Space Complexity:
+
+// Code
+
+class Solution{
+   public static twoString(String s1,string s2){
+     Set<Character> s1Set = new HashSet<>();
+     Set<Character> s2Set = new HashSet<>();
+
+     for(char c: s1.toCharArray()){
+        s1.Set.add(c);
+     }
+     
+     for(char c: s2.toCharArray()){
+        s2.Set.add(c);
+     }
+
+    s1Set.retainAll(s2Set);
+    if(!s1Set.isEmpty()){
+      return "Yes";
+    }
+return "No";
+   }
+}
