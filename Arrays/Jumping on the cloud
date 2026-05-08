@@ -1,8 +1,8 @@
 // Problem: Jumping on the cloud
 // Platform: Hackerrank
-// Approach:
-// Time Complexity:
-// Space Complexity:
+// Approach: Greddy Algorithm
+// Time Complexity: O(n)
+// Space Complexity: O(1)
 
 // Code 
 
