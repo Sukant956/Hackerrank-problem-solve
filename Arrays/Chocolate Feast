@@ -1,0 +1,24 @@
+// Problem: Chocolate Feast
+// Platform: Hackerrank
+// Approach:
+// Time complexity:
+// Space complexity:
+
+// code
+
+class Solution{
+   public static int chocolateFeast(int n,int c,int m){
+      int num = n / c;
+      int wrapper = num;
+      if(wrapper < m){
+         return num;
+      }
+      else{
+        while(wrapper >= m){
+           num = num + 1;
+          wrapper = wrapper - m + 1;
+        }
+      }
+     return num;
+   }
+}
